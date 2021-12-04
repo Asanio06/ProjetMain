@@ -1,0 +1,70 @@
+.box {
+
+  padding: 70px 50px 70px 50px;
+
+}
+
+.box-login {
+  border-radius: 25px;
+  width: 400px;
+
+}
+
+.bg-grey{
+  background-color: rgb(197,191,190);
+}
+
+.full-size{
+  height: 100vh;
+}
+
+.logo{
+  width: 300px;
+}
+
+.background a{
+  text-decoration: none !important;
+  color:  white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.link{
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+
+body{
+  background-color: #06486F;
+}
+
+.font-small{
+  font-size: small;
+}
+p{
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+.background{
+  background-image: url("src/assets/robot.png");
+  min-height: 30em;
+  min-width: 30em;
+}
+
+
+.third{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-range{
+  width: 300px;
+}
+
+.btn-primary{
+  background-color: #06486F;
+}
+
+
