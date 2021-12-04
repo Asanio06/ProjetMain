@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SendDataService} from "../../services/send-data.service";
 
 @Component({
   selector: 'app-move-finder-independantly',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoveFinderIndependantlyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sendDataService:SendDataService) { }
 
   ngOnInit(): void {
   }

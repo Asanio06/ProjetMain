@@ -14,6 +14,8 @@ export class SendDataService {
     this.url = environment.url;
   }
 
-
+  sendData(doigt: string, angle: string): Observable<any> {
+    return this.http.post<any>(`${this.url}/?doigt=${doigt}&angle=${angle}`,{});
+  }
 
 }
