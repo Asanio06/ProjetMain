@@ -7,18 +7,11 @@ import { AccueilComponent } from './pages/accueil/accueil.component';
 import { MoveFinderIndependantlyComponent } from './pages/move-finder-independantly/move-finder-independantly.component';
 import { DisplayFingerPositionComponent } from './pages/display-finger-position/display-finger-position.component';
 import { RecordMoveComponent } from './pages/record-move/record-move.component';
-import { IMqttServiceOptions, MqttModule } from "ngx-mqtt";
 import { environment as env } from '../environments/environment';
 import { RecordComponent } from './pages/record/record.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
-const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
-  hostname: env.mqtt.server,
-  port: env.mqtt.port,
-  protocol: (env.mqtt.protocol === "wss") ? "wss" : "ws",
-  path: '',
-};
 
 @NgModule({
   declarations: [
@@ -33,7 +26,6 @@ const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    MqttModule.forRoot(MQTT_SERVICE_OPTIONS),
 
   ],
   providers: [],
