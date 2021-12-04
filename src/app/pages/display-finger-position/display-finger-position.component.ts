@@ -29,6 +29,10 @@ export class DisplayFingerPositionComponent implements OnInit {
         // @ts-ignore
         const tab = val['lastData'].split(":");
         this.doigt1 = parseInt(tab[0]);
+        this.doigt2 = parseInt(tab[1]);
+        this.doigt3 = parseInt(tab[2]);
+        this.doigt4 = parseInt(tab[3]);
+        this.doigt5 = parseInt(tab[4]);
       })
     });
   }
