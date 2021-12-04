@@ -10,6 +10,8 @@ import { RecordMoveComponent } from './pages/record-move/record-move.component';
 import { IMqttServiceOptions, MqttModule } from "ngx-mqtt";
 import { environment as env } from '../environments/environment';
 import { RecordComponent } from './pages/record/record.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
   hostname: env.mqtt.server,
@@ -28,6 +30,7 @@ const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
     RecordComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     MqttModule.forRoot(MQTT_SERVICE_OPTIONS),

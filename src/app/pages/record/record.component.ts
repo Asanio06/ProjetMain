@@ -18,7 +18,7 @@ export class RecordComponent implements OnInit {
   private subscribeRegister: Subscription | undefined;
   private subscribeSend: Subscription | undefined;
 
-  constructor() {
+  constructor(private sendDataService:SendDataService) {
   }
 
   ngOnInit(): void {
