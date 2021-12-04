@@ -12,4 +12,19 @@ export class MoveFinderIndependantlyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeDoigt1($event : any){
+    console.log($event.target.value)
+  }
+  changeDoigt2($event : any){
+    console.log($event.target.value)
+  }
+  changeDoigt3($event : any){
+    console.log($event.target.value)
+  }
+  changeDoigt4($event : any){
+    console.log($event.target.value)
+  }
+  changeDoigt5($event : any){
+    console.log($event.target.value)
+  }
 }
