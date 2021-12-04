@@ -17,7 +17,12 @@ export class SendDataService {
   sendData(doigt: string, angle: string): Observable<any> {
     console.log(`${this.url}/api?doigt=${doigt}&angle=${angle}`)
 
-    return this.http.post<any>(`${this.url}/api?doigt=${doigt}&angle=${angle}`,{});
+    return this.http.post<any>(`${this.url}/api?doigt=${doigt}&angle=${angle}`, {});
+  }
+
+  getData(): Observable<any> {
+
+    return this.http.get<any>(`${this.url}/api`, {});
   }
 
 }

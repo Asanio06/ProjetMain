@@ -30,7 +30,6 @@ export class MoveFinderIndependantlyComponent implements OnInit {
   }
 
   onClickOuvrirMain(){
-    console.log("yess")
     this.sendDataService.sendData("6","90").subscribe((re)=>console.log);
 
   }
