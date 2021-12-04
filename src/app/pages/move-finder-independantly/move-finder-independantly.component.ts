@@ -14,13 +14,13 @@ export class MoveFinderIndependantlyComponent implements OnInit {
   }
 
   changeDoigt1($event : any){
-    console.log($event.target.value)
+    this.sendDataService.sendData("1",$event.target.value.toString())
   }
   changeDoigt2($event : any){
-    console.log($event.target.value)
+    this.sendDataService.sendData("2",$event.target.value.toString())
   }
   changeDoigt3($event : any){
-    console.log($event.target.value)
+    this.sendDataService.sendData("3",$event.target.value.toString())
   }
   changeDoigt4($event : any){
     this.sendDataService.sendData("4",$event.target.value.toString())
@@ -38,4 +38,10 @@ export class MoveFinderIndependantlyComponent implements OnInit {
     this.sendDataService.sendData("7","90");
 
   }
+
+  onClickFermerMain(){
+    this.sendDataService.sendData("0", "90")
+  }
 }
+
+
