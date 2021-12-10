@@ -8,7 +8,7 @@ import {RecordComponent} from "./pages/record/record.component";
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
-  { path: 'mv', component: RecordComponent },
+  { path: 'record', component: RecordComponent },
   { path: 'display', component: DisplayFingerPositionComponent },
   { path: 'move', component: MoveFinderIndependantlyComponent },
 ];

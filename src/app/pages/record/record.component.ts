@@ -17,13 +17,40 @@ export class RecordComponent implements OnInit {
   temp = {};
   private subscribeRegister: Subscription | undefined;
   private subscribeSend: Subscription | undefined;
+  doigt1: number = 0
+  doigt2: number = 0
+  doigt3: number = 0
+  doigt4: number = 0
+  doigt5: number = 0
 
-  constructor(private sendDataService:SendDataService) {
+
+  constructor(private sendDataService: SendDataService) {
   }
 
   ngOnInit(): void {
 
   }
+
+  changeDoigt1($event: any) {
+    this.doigt1 = $event.target.value * 10 + 90
+  }
+
+  changeDoigt2($event: any) {
+    this.doigt2 = $event.target.value * 10 + 90
+  }
+
+  changeDoigt3($event: any) {
+    this.doigt3 = $event.target.value * 10 + 90
+  }
+
+  changeDoigt4($event: any) {
+    this.doigt4 = $event.target.value * 10 + 90
+  }
+
+  changeDoigt5($event: any) {
+    this.doigt5 = $event.target.value * 10 + 90
+  }
+
 
   sendData() {
 
@@ -31,9 +58,8 @@ export class RecordComponent implements OnInit {
       return;
     }
 
-    let counter = 0;
 
-    const source2 = timer(1000, 1000,);
+    const source2 = timer(1000, 1000);
     this.subscribeSend = source2.subscribe(val => {
       // @ts-ignore
 
@@ -43,6 +69,8 @@ export class RecordComponent implements OnInit {
       }
       // @ts-ignore
       const hand = this.temp[val];
+
+      console.log(hand)
 
       //
       // this.sendDataService.sendData("1", hand.doigt1.toString())
@@ -58,11 +86,11 @@ export class RecordComponent implements OnInit {
   //
   getData(): Hand {
     const hand: Hand = defaultsDeep({
-      doigt1: 90,
-      doigt2: 90,
-      doigt3: 90,
-      doigt4: 90,
-      doigt5: 90,
+      doigt1: this.doigt1,
+      doigt2: this.doigt2,
+      doigt3: this.doigt3,
+      doigt4: this.doigt4,
+      doigt5: this.doigt5,
     })
     return hand;
   }
