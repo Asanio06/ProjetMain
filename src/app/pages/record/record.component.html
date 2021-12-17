@@ -16,7 +16,7 @@
       <img class="logo" src="assets/logo.png">
     </div>
     <div class="col-11 p-5 row  justify-content-center">
-      <div class="box-login bg-grey  shadow mr-5">
+      <div class="box-login row bg-grey  shadow mr-5">
         <div class="first col-12">
           <p class="titre pt-5 text-center">
             BOUGER
@@ -25,51 +25,56 @@
             LES DOIGTS :
           </p>
         </div>
-        <div class="col-12 pt-3 pb-5 text-center">
+        <div class="col-12 pt-3 pb-2 text-center">
           <span class=" range d-block"><label for="customRange3" class="form-label">Pouce</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt1($event)" class="form-range" min="0" max="9" step="1" id="customRange1"></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt1($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange1"></span>
           <span class=" range d-block"><label for="customRange1" class="form-label">{{doigt1}}</label></span>
 
         </div>
-        <div class="col-12 pb-5 text-center">
+        <div class="col-12 pb-2 text-center">
           <span class=" range d-block"><label for="customRange3" class="form-label">Index</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt2($event)" class="form-range" min="0" max="9" step="1" id="customRange2"></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt2($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange2"></span>
           <span class=" range d-block"><label for="customRange2" class="form-label">{{doigt2}}</label></span>
 
         </div>
-        <div class="col-12 pb-5 text-center">
+        <div class="col-12 pb-2 text-center">
           <span class=" range d-block"><label for="customRange3" class="form-label">Majeur</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt3($event)" class="form-range" min="0" max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt3($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange3"></span>
           <span class=" range d-block"><label for="customRange3" class="form-label">{{doigt3}}</label></span>
 
         </div>
-        <div class="col-12 pb-5 text-center">
+        <div class="col-12 pb-2 text-center">
           <span class=" range d-block"><label for="customRange3" class="form-label">Annulaire</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt4($event)" class="form-range" min="0" max="9" step="1" id="customRange4"></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt4($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange4"></span>
           <span class=" range d-block"><label for="customRange4" class="form-label">{{doigt4}}</label></span>
 
         </div>
-        <div class="col-12 pb-5 text-center">
+        <div class="col-12 pb-2 text-center">
           <span class=" range d-block"><label for="customRange3" class="form-label">Auriculaire</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt5($event)" class="form-range" min="0" max="9" step="1" id="customRange5"></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt5($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange5"></span>
           <span class=" range d-block"><label for="customRange5" class="form-label">{{doigt5}}</label></span>
 
         </div>
 
-        <div class="row justify-content-around">
-          <div class="col-12 justify-content-around">
-            <button (click)="recordMove()">Record</button>
-            <button (click)="stopRecord()">Stop</button>
-            <button (click)="sendData()">Send data</button>
-          </div>
-
+        <div class="col-12 text-center">
+          <button class="btn-primary" (click)="recordMove()">Record</button>
         </div>
+        <div class="col-12 text-center">
 
+          <button class="btn-primary" (click)="stopRecord()">Stop</button>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn-primary" (click)="sendData()">Send data</button>
+        </div>
 
 
       </div>
     </div>
-
 
 
   </div><!--row-->

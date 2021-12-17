@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { MoveFinderIndependantlyComponent } from './pages/move-finder-independantly/move-finder-independantly.component';
 import { DisplayFingerPositionComponent } from './pages/display-finger-position/display-finger-position.component';
-import { RecordMoveComponent } from './pages/record-move/record-move.component';
 import { environment as env } from '../environments/environment';
 import { RecordComponent } from './pages/record/record.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,7 +18,6 @@ import { HttpClientModule } from '@angular/common/http';
     AccueilComponent,
     MoveFinderIndependantlyComponent,
     DisplayFingerPositionComponent,
-    RecordMoveComponent,
     RecordComponent
   ],
   imports: [

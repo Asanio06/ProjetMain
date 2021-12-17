@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
+  <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
- </head>
+</head>
 
 <body>
 
@@ -26,24 +28,40 @@
           </p>
         </div>
         <div class="col-12 pt-3 pb-5 text-center">
-          <span class=" range d-block"><label for="customRange3" class="form-label">Pouce</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt1($event)" class="form-range" min="0" max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><label for="customRange1" class="form-label">Pouce</label></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt1($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange1" ></span>
+
+          <span class=" range d-block"><label for="customRange1" class="form-label">{{doigt1}}</label></span>
+
         </div>
         <div class="col-12 pb-5 text-center">
-          <span class=" range d-block"><label for="customRange3" class="form-label">Index</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt2($event)" class="form-range" min="0" max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><label for="customRange2" class="form-label">Index</label></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt2($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange2"></span>
+          <span class=" range d-block"><label for="customRange2" class="form-label">{{doigt2}}</label></span>
+
         </div>
         <div class="col-12 pb-5 text-center">
           <span class=" range d-block"><label for="customRange3" class="form-label">Majeur</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt3($event)" class="form-range" min="0" max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt3($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><label for="customRange3" class="form-label">{{doigt3}}</label></span>
+
         </div>
         <div class="col-12 pb-5 text-center">
-          <span class=" range d-block"><label for="customRange3" class="form-label">Annulaire</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt4($event)" class="form-range" min="0" max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><label for="customRange4" class="form-label">Annulaire</label></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt4($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange4"></span>
+          <span class=" range d-block"><label for="customRange4" class="form-label">{{doigt4}}</label></span>
+
         </div>
         <div class="col-12 pb-5 text-center">
-          <span class=" range d-block"><label for="customRange3" class="form-label">Auriculaire</label></span>
-          <span class=" range d-block"><input type="range" (change)="changeDoigt5($event)" class="form-range" min="0" max="9" step="1" id="customRange3"></span>
+          <span class=" range d-block"><label for="customRange5" class="form-label">Auriculaire</label></span>
+          <span class=" range d-block"><input type="range" (change)="changeDoigt5($event)" class="form-range" min="0"
+                                              max="9" step="1" id="customRange5"></span>
+          <span class=" range d-block"><label for="customRange5" class="form-label">{{doigt5}}</label></span>
+
         </div>
 
         <div class="row col-12 justify-content-around">
